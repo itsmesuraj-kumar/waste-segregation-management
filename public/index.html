@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Waste Management Portal</title>
+  <link rel="stylesheet" href="ipstyle.css">
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+</head>
+<body>
+  <main id="main-container">
+    <header>Waste Management Portal</header>
+    <p id="description">
+      This site provides the real time data of different bins provided by Ultrasonic sensors which can be used for further analytics.
+      It uses realtime database of Google's firebase. Firebase provides Google's in-house security. 
+    </p>
+    <section class="flex-container">
+    <div class="container">
+      <div class="header1"><h4>Wet Bin</h4></div>
+      <div id="data1"></div>
+    </div>
+    <div class="container">
+      <div class="header1"><h4>Metal Bin</h4></div>
+      <div id="data2"></div>
+    </div>
+    <div class="container">
+      <div class="header1"><h4>Solid Bin</h4></div>
+      <div id="data3"></div>
+    </div>
+    </div>
+    <footer id="footer-style">
+      &copy;&nbsp;Copyright 2020<br />
+      <a href="#">Terms & Conditions</a> 
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
